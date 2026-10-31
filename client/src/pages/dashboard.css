@@ -1,0 +1,51 @@
+.dashboard-wrapper {
+  position: relative;
+}
+
+.dashboard-blur {
+  filter: blur(6px);
+  pointer-events: none;
+}
+
+.dashboard-overlay {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  display: grid;
+  place-items: center;
+  transform: translate(-50%, -50%);
+  background: #fff;
+  padding: 32px;
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+  text-align: center;
+  width: 320px;
+}
+
+.dashboard-overlay h2 {
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.dashboard-overlay button {
+  width: 100%;
+  padding: 10px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.dashboard-overlay .login-btn {
+  background: #ff69b4;
+  color: white;
+}
+
+.dashboard-overlay .signup-btn {
+  background: #333;
+  color: white;
+}
+.dashboard-overlay {
+  z-index: 10;
+}
